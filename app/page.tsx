@@ -1,9 +1,11 @@
-import React from "react";
+"use client";
+
+import React, { JSX } from "react";
 import { useTypewriter } from "./hooks/useTypewriter";
 
 const words = ["photographer", "videographer", "video editor"];
+export default function App() {
 
-export default function App(): JSX.Element {
   const typed = useTypewriter(words, 80, 1800, true);
 
   return (
@@ -187,7 +189,7 @@ export default function App(): JSX.Element {
         </section>
       </main>
 
-      <footer id="footer" className="py-12 bg-darkcolor text-white">
+      <footer id="footer" className="py-12 bg-[#332e29] text-white">
         <div className="container-custom text-center">
           <div className="mb-8">
             <h3 className="text-3xl">MAYUR MIRASE</h3>
